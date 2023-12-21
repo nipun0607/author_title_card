@@ -3,6 +3,8 @@
 import Card from "./Component/Card/Card.js";
 import Header from "./Component/Header/Header.js";
 import Data from './Component/Data.json'
+import Footer from './Component/Footer/Footer.js'
+
 
 function App() {
   return (
@@ -12,8 +14,11 @@ function App() {
     {Data.map((e)=>{
       return <Card title={e.title} author={e.author}  />
     })}
+    <Footer/>
+
 
     </div>
+
   );
 }
 
